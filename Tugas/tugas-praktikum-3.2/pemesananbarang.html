@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form pemesanan barang</title>
+</head>
+<body style="margin-top: 0; margin-left: 0;">
+  <form action="pesananbarang.html">
+  <table style="border: 1px solid black; padding: 20px; background-color: gainsboro; width: 1277px;">
+    <tr>
+      <td>Home |</td>
+      <td>Generate Link |</td>
+      <td>Transaction History |</td>
+      <td>Policy |</td>
+      <td>Logout</td>
+    </tr>
+  </table>
+  <table style="padding-top: 15px; padding-right: 150px; padding-left: 20px; float: left;">
+    <tr>  
+        <td><img src="assets/image/kisspng-long-sleeved-t-shirt-long-sleeved-t-shirt-clothing-stan-searfus-memorial-fund-youth-t-shirt-light-bl-5be648bdbaedf8.1691419215418185577657.png" style="width: 200px; margin-top: 50px;" alt="">
+        <br><br>
+        <button type="submit">Upload Picture</button></td>
+        </tr>
+  </table>
+  <table style="padding-left: 30px; padding-top: 50px;">    
+        <tr>
+          <td><label for="title">Title Here</label></td>
+          <td>: <input type="text" id="title"></td>
+        </tr>
+        <tr>
+          <td><label for="deskripsi">Description</label></td>
+          <td>: <textarea type="text" id="deskripsi"rows="7"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="account">Account Number</label></td>
+          <td>: <input type="number" id="account"></td>
+        </tr>
+        <tr>
+          <td>Bank</td>
+          <td>: <input type="text" list="perbankan" name="bank"></td>
+          <datalist id="perbankan">
+            <option value="HSBC">HSBC</option>
+            <option value="BCA">BCA</option>
+            <option value="MANDIRI">MANDIRI</option>
+          </datalist>
+        </tr>
+        <tr>
+          <td><label for="ac">Account Holder</label></td>
+          <td>: <input type="text" id="ac"></td>
+        </tr>
+        <tr>
+          <td><label for="transaksi">Transaction</label></td>
+          <td>: <input type="number" name="transaksi" min="1" max="3"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><p>*if  the transaction is for 3 person, choose 3 from the drop-down list</p></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox">Sent to Mobile Phone</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox">Sent to Email</td>
+        </tr>
+        <tr>
+          <td><label for="mobile">Send to Mobile Phone</label></td>
+          <td>: <input type="number" id="mobile"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Send to Email</label></td>
+          <td>: <input type="text" id="email"></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td><button type="submit">Generate Nabr Link</button></td>
+        </tr>
+    </table>
+  </form>
+</body>
+</html>

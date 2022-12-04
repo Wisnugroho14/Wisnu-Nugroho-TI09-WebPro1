@@ -1,0 +1,64 @@
+body {
+  background-color: aquamarine;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+  background-color: aqua;
+  text-align: center;
+  padding: 10px;
+}
+
+#header h1 {
+  color: blue;
+}
+
+#header blockquote {
+  background-color: white;
+}
+
+.menu ul {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.menu ul li {
+  border: 3px solid black;
+  background-color: white;
+}
+
+.gambar {
+  text-align: center;
+}
+
+.isi {
+  font-size: 15px;
+}
+
+#profil ul {
+  list-style-type: square;
+}
+
+#beternak {
+  color: red;
+}
+
+.koleksi {
+  text-align: center;
+}
+
+.koleksi img {
+  width: 22%;
+}
+
+.promo {
+  text-align: center;
+}
+
+.promo ol {
+  list-style-type: none;
+}
+
