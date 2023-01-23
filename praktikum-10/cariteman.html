@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cari Teman</title>
+</head>
+<body>
+  <form id="cari">
+    Cari Siswa : <input type="text" name="namaSiswa" size="30">
+    <input type="button" name="proses" value="Go" onclick="cariTeman()">
+  </form>
+  <hr>
+  <div style="width: 300px; border: 25px solid cyan; padding: 25px; margin: 25px;">Nama Yang Anda Cari : <span id="katacari"></span>
+</div>
+
+<script>
+  function cariTeman (){
+    let form = document.getElementById('cari')
+    let str = form.namaSiswa.value;
+
+    alert("Kata cari : " + form.namaSiswa.value);
+    document.getElementById('katacari').innerHTML = str;
+    console.log(str);
+
+    if (str== "Wisnu"){
+      console.log ('Wisnu ketemu');
+    } else {
+      console.log ('Ini Bukan Wisnu');
+      document.getElementById('katacari').style ="color red";
+    }
+  }
+</script>
+</body>
+</html>
